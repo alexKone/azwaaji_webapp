@@ -38,5 +38,12 @@
       },
       "rules": {}
     }
-  ]
+  ],
+  "extends": [
+    "plugin:valtio/recommended"
+  ],
+  "rules": {
+    "valtio/state-snapshot-rule": "warn",
+    "valtio/avoid-this-in-proxy" :"warn"
+  }
 }
