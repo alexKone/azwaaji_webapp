@@ -1,3 +1,9 @@
+import { UserCard } from '@azwaaji/shared/ui';
+
 export default function Homepage() {
-  return <div>home</div>;
+  return (
+    <div>
+      <UserCard />
+    </div>
+  );
 }
