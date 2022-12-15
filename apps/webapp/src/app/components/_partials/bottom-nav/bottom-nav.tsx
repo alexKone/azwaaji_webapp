@@ -11,11 +11,7 @@ import { ROUTES } from '../../../../routes';
 import { useSidenav } from '@azwaaji/shared/ui';
 
 export default function BottomNav() {
-  const { toggle, isOpen } = useSidenav();
-
-  const toggleSidenav = () => {
-    toggle(!isOpen);
-  };
+  const toggleSidenav = () => {};
 
   return (
     <nav className={styles['content']}>

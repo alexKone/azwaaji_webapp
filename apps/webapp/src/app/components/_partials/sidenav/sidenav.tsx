@@ -1,11 +1,6 @@
-import { useSidenav } from '@azwaaji/shared/ui';
 import styles from './sidenav.module.scss';
 
 export default function Sidenav() {
-  const { isOpen } = useSidenav();
-
-  console.log(isOpen);
-
   return (
     <aside className={styles['sidenav']}>
       <nav className={styles['sidenav__container']}>

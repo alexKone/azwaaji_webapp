@@ -1,12 +1,16 @@
-import { proxy } from 'valtio';
-import Loading from '../../../../libs/shared/ui/src/lib/loading/loading';
+import { configureStore } from '@reduxjs/toolkit';
+import counterReducer from './features/counter/counter-slice';
+import { apiSlice } from './features/profile/profile-api-slice';
 
-interface Store {
-  isAuth: boolean;
-  loading: boolean;
-}
-
-const store = proxy({
-  isAuth: true,
-  loading: true,
+export const store = configureStore({
+  reducer: {
+    counter: counterReducer,
+    [apiSlice.reducerPath]: apiSlice.reducer,
+  },
+  middleware: (getDefaultMiddleware) => {
+    return getDefaultMiddleware().concat(apiSlice.middleware);
+  },
 });
+
+export type AppDispatch = typeof store.dispatch;
+export type RootState = ReturnType<typeof store.getState>;

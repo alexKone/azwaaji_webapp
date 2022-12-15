@@ -1,13 +1,15 @@
 import styles from './header.module.scss';
 
 /* eslint-disable-next-line */
-export interface HeaderProps {}
+export interface HeaderProps {
+  imgLink: string;
+}
 
 export function Header(props: HeaderProps) {
   return (
-    <div className={styles['container']}>
-      <h1>Welcome to Header!</h1>
-    </div>
+    <header className={styles['container']}>
+      <img className={styles['img']} src={props.imgLink} alt="" />
+    </header>
   );
 }
 

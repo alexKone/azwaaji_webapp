@@ -1,7 +1,10 @@
-/*
- * Replace this with your own classes
- *
- * e.g.
- * .container {
- * }
-*/
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+.img {
+  width: 70px;
+}

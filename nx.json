@@ -61,6 +61,17 @@
         "style": "scss",
         "linter": "eslint"
       }
+    },
+    "@nrwl/web:application": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "vitest",
+      "e2eTestRunner": "none"
+    },
+    "@nrwl/web:library": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "vitest"
     }
   },
   "defaultProject": "webapp"
