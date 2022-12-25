@@ -84,6 +84,7 @@ body {
   font-size: 16px;
   padding: 24px;
 
+  width: 100vw;
   min-height: 100vh;
   height: auto;
   position: relative;
@@ -193,4 +194,42 @@ header .header__icon {
 
 footer .copyright {
   text-align: center;
+}
+
+
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text__title {
+    text-align: center;
+    font-size: 32px;
+
+  }
+
+  .text__image img {
+    position: absolute;
+    top: 0;
+
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
