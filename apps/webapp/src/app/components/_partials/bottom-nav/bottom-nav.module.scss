@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #4A3A82;
+}
+
 .content {
   position: fixed;
   bottom: 0;
@@ -8,6 +12,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: #ffffff;
 
   button {
     background: none;

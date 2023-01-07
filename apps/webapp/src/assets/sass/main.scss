@@ -11,3 +11,11 @@
 body {
   font-family: $font-family;
 }
+
+main {}
+
+.form__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+}

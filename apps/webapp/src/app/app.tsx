@@ -18,7 +18,7 @@ export function App() {
     element: <MainLayout />,
     children: [
       { index: true, path: ROUTES.main.home, element: <Homepage /> },
-      { path: ROUTES.main.home, element: <ProfileDetails /> },
+      { path: ROUTES.main.profile.details, element: <ProfileDetails /> },
       { path: ROUTES.main.account, element: <Account /> },
       { path: ROUTES.main.messages, element: <Messages /> },
       { path: ROUTES.main.favorites, element: <Favorites /> },
